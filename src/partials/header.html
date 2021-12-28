@@ -1,8 +1,47 @@
 <header class="header">
   <section class="container">
     <div class="logotype">
-      <img src="../images/logotype.jpg" alt="" />
+      <a href="./">
+        <svg width="135px" height="36px">
+          <use href="./images/project-sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="mobile-menu">
+        <input type="checkbox" id="check-menu" />
+        <label for="check-menu">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </label>
+        <nav class="main-menu">
+          <a href="#">About us</a>
+          <a href="#">Team</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact us</a>
+        </nav>
+      </div>
+      <div class="header-nav">
+        <nav class="navigation-list">
+          <ul class="list navigation">
+            <li class="link nav-link">About us</li>
+            <li class="link nav-link">Team</li>
+            <li class="link nav-link">Portfolio</li>
+            <li class="link nav-link">Contact us</li>
+          </ul>
+          <div class="custom-select nav-link" style="width: 31px; height: 18px">
+            <select>
+              <option value="0">USA</option>
+              <option value="1">Ukraine<span>✓</span></option>
+              <option value="2">USA<span>✓</span></option>
+              <option value="3">Russia<span>✓</span></option>
+            </select>
+            <svg class="menu-open" width="10px" height="7px">
+              <use href="./images/project-sprite.svg#menu_open"></use>
+            </svg>
+          </div>
+        </nav>
+      </div>
     </div>
   </section>
 </header>
-npx browserslist@latest --update-db
