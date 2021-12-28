@@ -171,15 +171,22 @@
   }
 }
 
-.select-items div,
-.select-selected {
-  position: relative;
-  cursor: pointer;
+.same-as-selected::after {
+  content: '✓';
+  float: right;
+}
+
+.custom-select::after {
+  display: block;
+  content: ' ';
+  background-image: url('../images/project-sprite.svg#menu_open');
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
 }
 
 .select-items div,
-.select-selected,
-.icon1 {
+.select-selected {
   position: relative;
   cursor: pointer;
   display: block;
@@ -188,6 +195,8 @@
 .select-hide {
   display: none;
 }
+
+// :checked
 
 //   @media screen and (min-width: 320px) and (max-width: 767px) {
 //     max-width: 480px;
