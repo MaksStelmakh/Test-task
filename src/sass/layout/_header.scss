@@ -34,6 +34,10 @@
   line-height: 36px;
 }
 
+.hover-link:hover {
+  color: var(--primary);
+}
+
 .header-nav {
   @media screen and (max-width: 570px) {
     margin-right: 20px;
@@ -193,6 +197,10 @@
 
 .select-selected {
   width: 65px;
+
+  &:hover {
+    color: var(--primary);
+  }
 }
 
 .select-selected::after {
