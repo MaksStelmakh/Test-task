@@ -148,6 +148,11 @@
   margin-top: 1px;
   z-index: 11;
 
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 32px;
+  }
+
   & select {
     display: none;
   }
