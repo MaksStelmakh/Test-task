@@ -18,12 +18,37 @@
   line-height: 22px;
   color: var(--black);
   max-width: 655px;
+
+  @media screen and (max-width: 530px) {
+    max-width: 100%;
+  }
 }
 
 .multiple-items {
   display: flex;
   margin-top: 70px;
   margin-left: 87px;
+
+  @media screen and (max-width: 1443px) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 840px) {
+    margin-left: 20px;
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 530px) {
+    margin-left: 80px;
+    max-width: 70%;
+  }
+  @media screen and (max-width: 440px) {
+    margin-left: 40px;
+  }
 }
 
 .teammate {
@@ -47,6 +72,10 @@
   bottom: 200px;
   left: -100px;
 
+  @media screen and (max-width: 840px) {
+    left: -60px;
+  }
+
   &::after {
     content: 'ᐸ';
     width: 20px;
@@ -60,6 +89,10 @@
 .slick-next {
   bottom: 200px;
   right: -40px;
+
+  @media screen and (max-width: 840px) {
+    right: -50px;
+  }
 
   &::after {
     content: 'ᐳ';
