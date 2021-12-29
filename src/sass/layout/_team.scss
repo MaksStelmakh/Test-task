@@ -1,0 +1,93 @@
+.team-container {
+  padding-top: 44px;
+  padding-bottom: 75px;
+}
+
+.team-heading {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 15px;
+}
+
+.team-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--black);
+  max-width: 655px;
+}
+
+.multiple-items {
+  display: flex;
+  margin-top: 70px;
+  margin-left: 87px;
+}
+
+.teammate {
+  width: 260px;
+  height: 424px;
+  margin-right: 61px;
+}
+
+.slick-arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background-color: unset;
+  border: none;
+}
+
+// ᐳ
+// ᐸ
+.slick-prev {
+  bottom: 200px;
+  left: -100px;
+
+  &::after {
+    content: 'ᐸ';
+    width: 20px;
+    height: 40px;
+    color: var(--gray);
+    font-size: 30px;
+    font-weight: 900;
+  }
+}
+
+.slick-next {
+  bottom: 200px;
+  right: -40px;
+
+  &::after {
+    content: 'ᐳ';
+    width: 20px;
+    height: 40px;
+    color: var(--gray);
+    font-size: 30px;
+    font-weight: 900;
+  }
+}
+
+.about-team {
+  width: 260px;
+  height: 100px;
+  background-color: var(--primary);
+}
+
+.name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  padding: 12px 0 5px 12px;
+}
+
+.quote {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 12px;
+}
