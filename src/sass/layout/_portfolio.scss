@@ -46,9 +46,13 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+
+  @media screen and (max-width: 1443px) {
+    gap: 5px;
+  }
 }
 
-// ///////////////////////////////////////////////////@
+// ///////////////////////////////////////////////////
 
 .flip {
   position: relative;
@@ -102,6 +106,7 @@
   margin-right: 2px;
   margin-bottom: 1em;
   width: 320px;
+
   > .front,
   > .back {
     display: block;
