@@ -1,0 +1,174 @@
+.main {
+  background-image: url(../images/main/main.jpg);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  height: 600px;
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @media screen and (max-width: 1366px) {
+    background-size: contain;
+  }
+
+  @media screen and (max-width: 1366px) {
+    background-size: 100%;
+    background-image: url(../images/main/main-mobile.jpg);
+  }
+}
+
+.main-text {
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: var(--white);
+  max-width: 520px;
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 365px) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.main-under-text {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: var(--white);
+  max-width: 386px;
+  margin-bottom: 39px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 365px) {
+    font-size: 10px;
+    line-height: 25px;
+  }
+}
+
+.button {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+  background-color: var(--primary);
+  cursor: pointer;
+  border: none;
+  padding: 11px 29px;
+  border: 1px solid var(--primary);
+}
+
+.main-button {
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.button:hover,
+button:focus {
+  background-color: unset;
+  color: var(--primary);
+}
+
+.modal-window {
+  width: 500px;
+  height: 440px;
+  background-color: var(--white);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.close-modal {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  background-color: unset;
+  border: none;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 10px;
+  top: 30px;
+  right: 20px;
+  z-index: 200;
+  cursor: pointer;
+
+  @media screen and (max-width: 500px) {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.modal-name {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 26px;
+}
+
+.modal-window {
+  padding: 58px 35px 42px 35px;
+}
+
+.modal-imput {
+  width: 100%;
+  border: 2px solid #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--black);
+  padding: 12px 13px;
+  margin-bottom: 28px;
+  opacity: 0.3;
+}
+
+.modal-button {
+  margin-left: 150px;
+
+  @media screen and (max-width: 500px) {
+    margin: 0;
+    width: 100%;
+  }
+}

@@ -1,3 +1,7 @@
+.header {
+  height: 80px;
+}
+
 .logotype {
   padding-top: 25px;
   display: flex;
@@ -95,6 +99,7 @@
   display: block;
   position: absolute;
   width: 100%;
+  background-color: var(--white);
   bottom: 0;
   left: -17px;
   transform: translateY(100%);
